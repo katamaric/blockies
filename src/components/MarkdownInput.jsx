@@ -15,21 +15,24 @@ const MarkdownInput = ({ onSave }) => {
 
   return (
     <div>
-      <input
-        type="text"
-        name="title"
-        value={note.title}
-        onChange={handleInputChange}
-        placeholder="Note Title"
-      />
-      <textarea
-        name="content"
-        value={note.content}
-        onChange={handleInputChange}
-        rows="10"
-        cols="50"
-        placeholder="Write your note here..."
-      ></textarea>
+      <div>
+        <input
+          type="text"
+          name="title"
+          value={note.title}
+          onChange={handleInputChange}
+          placeholder="Give me a title !"
+        />
+      </div>
+      <div>
+        <textarea
+          name="content"
+          value={note.content}
+          onChange={handleInputChange}
+          rows="10"
+          placeholder="Now write a note here like blablabla...."
+        ></textarea>
+      </div>
       <button onClick={handleSave}>Save</button>
     </div>
   );
