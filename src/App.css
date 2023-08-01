@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 2;
+  padding: 2px;
+  overflow-y: auto;
+}
+
+.main-body {
+  flex: 8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-view {
+  flex: 7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.new-note {
+  flex: 3;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
