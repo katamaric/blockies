@@ -14,7 +14,6 @@ const App = () => {
   const saveNote = (note) => {
     const key = `note${notes.length + 1}`;
     localStorage.setItem(key, JSON.stringify(note));
-    // Update the notes state to include the new note
     setNotes([...notes, note]);
   };
 
@@ -32,7 +31,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Load notes from localStorage when the App component mounts
     loadNotesFromLocalStorage();
   }, []);
 
